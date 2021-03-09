@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Coets</title>
+</head>
+<body class="animate__animated animate__zoomIn" >   
+    <h1 class="text-center my-2"><b>Rockets!</b></h1>
+    <div class="container">
+    <div class="row my-4 justify-content-around">
+    <div class="col-4 " id="cards">
+        <button class="btn btn-info" onclick="CreateRocket1()"><b>Create rocket 1</b></button><br><br>   
+    <div class="card d-none text-center animate__animated animate__backInLeft" id="Rocketsinfo1">
+        <span><p></p></span> 
+    </div>
+    </div>             
+    <div class="col-4" id="cards">
+        <button class="btn btn-info" onclick="CreateRocket2()"><b>Create rocket 2</b></button><br><br> 
+    <div class="card d-none text-center animate__animated animate__backInDown" id="Rocketsinfo2">
+        <span><p></p></span>       
+    </div>
+    </div>   
+    <div class="col-4 " id="cards">
+        <button class="btn btn-info" onclick="PrintRocketAll()"><b>Print all Rockets</b></button><br> 
+        <div class="card d-none my-4 text-center animate__animated animate__backInRight"  id="RocketsinfoAll">
+        <span><p></p> </span>                 
+    </div>
+    </div>
+    </div>
+        <br>
+        <br>
+
+    <div class="row my-1 justify-content-around">
+        <div class="col-2">
+        <button class="btn btn-info" onclick="accelerarRocket1()"><b>Accelerate Rocket 1</b></button>      
+        </div>
+        <div class="col-2">
+        <button class="btn btn-info" onclick="frenarRocket1()"><b>Break Rocket 1</b></button>
+       </div>
+       <div class="col-2">
+        <button class="btn btn-info" onclick="accelerarRocket2()"><b>Accelerate Rocket 2</b></button>      
+       </div>
+       <div class="col-2">
+        <button class="btn btn-info" onclick="frenarRocket2()"><b>Break Rocket 2</b></button>
+       </div>
+    </div>
+        
+    <div class="row my-4 justify-content-around">
+        <div class="col-6">
+    <div class=" d-none" id="RocketAcelerado_div">
+        <div class="card">
+            <img src="../assets/img/rocket.svg" style="max-height: 10rem;" id ="img1" class="animate__animated animate__fadeInUpBig">
+            <div class="card-body">
+            <span id="RocketAcelerado"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-6 ">
+    <div class="d-none" id="RocketAcelerado2_div">
+        <div class="card">
+            <img src="../assets/img/rocket.svg" style="max-height: 10rem;" id ="img1" class="animate__animated animate__fadeInUpBig">
+            <div class="card-body">
+            <span id="RocketAcelerado2"></span>
+            </div>
+        </div>
+    </div> 
+</div>
+</div>
+    <script src="../controller/controller.js"></script>
+    <script src="../models/coetes.js"></script>
+    <script src="../models/engine.js"></script>
+    <script src="https://kit.fontawesome.com/5d2169d7fd.js" crossorigin="anonymous"></script>
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

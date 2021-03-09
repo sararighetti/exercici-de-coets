@@ -1,0 +1,32 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+ 
+ body{
+    background-image: url("../img/jeremy-thomas-E0AHdsENmDg-unsplash.jpg");
+    color: rgb(227, 221, 241);
+
+}
+.btn-info {
+    box-shadow:0 0 0 1px #5bc0de inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #46b8da, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#5bc0de;
+}
+span{
+    font-size: 1.3rem;
+}
+i{
+    font-size: 5rem;
+}
+#img{
+    animation-duration: 1s !important;
+    
+}
+.card{
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#e2d1d1, #7686fd);
+    color:rgb(57, 59, 57);
+    border-radius: 10%;
+    animation-duration: 0.7s !important;
+
+}
+
