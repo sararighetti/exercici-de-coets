@@ -1,13 +1,12 @@
 // Declaros vaiables y recojo los valores
-
 let arrayRockets: any = []
-let rockets1Info = document.getElementById("Rocketsinfo1")! as HTMLInputElement;
-let rockets2Info = document.getElementById("Rocketsinfo2")! as HTMLInputElement;
-let allRocketsInfo= document.getElementById("RocketsinfoAll")! as HTMLInputElement;
-let rocket1Accelerate = document.getElementById("RocketAcelerado")! as HTMLInputElement;
-let RocketAcelerado_div = document.querySelector("#RocketAcelerado_div")! as HTMLElement;
-let RocketAcelerado2_div = document.querySelector("#RocketAcelerado2_div")! as HTMLElement;
-let RocketAcelerado2 = document.getElementById("RocketAcelerado2")! as HTMLHeadElement;
+let rockets1Info = <HTMLInputElement>document.getElementById("Rocketsinfo1");
+let rockets2Info = <HTMLInputElement>document.getElementById("Rocketsinfo2");
+let allRocketsInfo= <HTMLInputElement>document.getElementById("RocketsinfoAll");
+let rocket1Accelerate =<HTMLInputElement>document.getElementById("RocketAcelerado");
+let RocketAcelerado_div = <HTMLInputElement>document.querySelector("#RocketAcelerado_div");
+let RocketAcelerado2_div = <HTMLInputElement>document.querySelector("#RocketAcelerado2_div");
+let RocketAcelerado2 = <HTMLInputElement>document.getElementById("RocketAcelerado2");
 let rocket1: Rocket;
 let rocket2:Rocket;
            
