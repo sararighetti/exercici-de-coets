@@ -16,13 +16,13 @@
     <div class="container">
     <div class="row my-4 justify-content-around">
     <div class="col-4 " id="cards">
-        <button class="btn btn-info" onclick="CreateRocket1()"><b>Create rocket 1</b></button><br><br>   
+        <button class="btn btn-info" onclick="CreateRocket(this.id)" id="createRocket1"><b>Create rocket 1</b></button><br><br>   
     <div class="card d-none text-center animate__animated animate__backInLeft" id="Rocketsinfo1">
         <span><p></p></span> 
     </div>
     </div>             
     <div class="col-4" id="cards">
-        <button class="btn btn-info" onclick="CreateRocket2()"><b>Create rocket 2</b></button><br><br> 
+        <button class="btn btn-info" onclick="CreateRocket(this.id)" id="createRocket2"><b>Create rocket 2</b></button><br><br> 
     <div class="card d-none text-center animate__animated animate__backInDown" id="Rocketsinfo2">
         <span><p></p></span>       
     </div>
@@ -36,22 +36,20 @@
     </div>
         <br>
         <br>
-
     <div class="row my-1 justify-content-around">
         <div class="col-2">
-        <button class="btn btn-info" onclick="accelerarRocket1()"><b>Accelerate Rocket 1</b></button>      
+        <button class="btn btn-info" onclick="accelerarRocket(this.id)" id="rocket1"><b>Accelerate Rocket 1</b></button>      
         </div>
         <div class="col-2">
-        <button class="btn btn-info" onclick="frenarRocket1()"><b>Break Rocket 1</b></button>
+        <button class="btn btn-info" onclick="frenarRocket(this.id)" id="rocket1_frenar"><b>Break Rocket 1</b></button>
        </div>
        <div class="col-2">
-        <button class="btn btn-info" onclick="accelerarRocket2()"><b>Accelerate Rocket 2</b></button>      
+        <button class="btn btn-info" onclick="accelerarRocket(this.id)" id="rocket2"><b>Accelerate Rocket 2</b></button>      
        </div>
        <div class="col-2">
-        <button class="btn btn-info" onclick="frenarRocket2()"><b>Break Rocket 2</b></button>
+        <button class="btn btn-info" onclick="frenarRocket(this.id)" id="rocket2_frenar"><b>Break Rocket 2</b></button>
        </div>
-    </div>
-        
+    </div>       
     <div class="row my-4 justify-content-around">
         <div class="col-6">
     <div class=" d-none" id="RocketAcelerado_div">
