@@ -1,9 +1,11 @@
 "use strict";
 var Rocket = /** @class */ (function () {
-    function Rocket(name) {
+    function Rocket(name, currentPower) {
         this._engines = new Array();
         this._currentPower = 0;
         this._name = name;
+        this._currentPower = currentPower;
+        this._engines = new Array();
     }
     Rocket.prototype.addEngine = function (engine) {
         this._engines.push(engine);
@@ -28,7 +30,8 @@ var Rocket = /** @class */ (function () {
         }
         return maxPower;
     };
-    Rocket.prototype.acelerarRocket = function () {
+    // metodo para accellerar el rocket
+    Rocket.prototype.acelerarRocketMethod = function () {
         var maxPower2 = this.maxPower();
         var accelerate;
         if (this._currentPower < maxPower2) {
@@ -42,7 +45,8 @@ var Rocket = /** @class */ (function () {
         }
         return "Actual power: " + this._currentPower;
     };
-    Rocket.prototype.frenarRocket = function () {
+    // metodo para accellerar el rocket
+    Rocket.prototype.frenarRocketMethod = function () {
         var decelerate;
         if (this._currentPower > 0) {
             for (var i = 0; i < this._engines.length; i++) {
@@ -57,3 +61,4 @@ var Rocket = /** @class */ (function () {
     };
     return Rocket;
 }());
+
